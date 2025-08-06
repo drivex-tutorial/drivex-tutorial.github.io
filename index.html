@@ -29,6 +29,7 @@
           <ul class="navbar-nav">
             <li class="nav-item"><a href="#intro">Introduction</a></li>
             <li class="nav-item"><a href="#schedule">Schedule</a></li>
+            <li class="nav-item"><a href="#resources">Resources</a></li>
             <li class="nav-item"><a href="#organizers">Organizers</a></li>
           </ul>
         </div> <!-- .offcanvas-body -->
@@ -338,7 +339,7 @@
     $(document).on('scroll', function() {
       let currentOffset = $(window).scrollTop() + 80,
           currentSection = "",
-          sections = ["intro", "schedule", "organizers"];
+          sections = ["intro", "schedule", "resources", "organizers"];
 
       for (let i = 0; i < sections.length; ++i) {
         if (currentOffset < $('#' + sections[i]).offset().top) {
